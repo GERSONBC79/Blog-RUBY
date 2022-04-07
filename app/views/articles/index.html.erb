@@ -4,7 +4,7 @@
 <br>
 <br>
 
-<table>
+<table class="table">
   <tr>
     <th>Titulo</th>
     <th>Texto</th>
@@ -15,7 +15,7 @@
     <tr>
       <td><%= article.title %></td>
       <td><%= article.text %></td>
-      <td><%= link_to 'Mostrar', article_path(article) %></td>
+      <td><%= link_to 'Mostrar', article_path(article), {remote: :true, 'data-toggle': 'modal', 'data-target': '#modal'} %></td>
       <td><%= link_to 'Editar', edit_article_path(article) %></td>
       <td><%= link_to 'Destroy', article_path(article),
               method: :delete,
@@ -23,3 +23,9 @@
     </tr>
   <% end %>
 </table>
+
+<div id="modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content"></div>
+  </div>
+</div>

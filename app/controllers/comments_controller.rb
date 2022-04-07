@@ -1,11 +1,15 @@
 class CommentsController < ApplicationController
     
-    http_basic_authenticate_with name: "dhh", password: "secret", only: :destroy
-    
+   
     def create
         @article = Article.find(params[:article_id])
         @comment = @article.comments.create(comment_params)
-        redirect_to article_path(@article)
+        #redirect_to article_path(@article)
+
+        respond_to do |f|
+            f.html #indica que formato de accion va a responder
+            f.js  #cuando se responda una peticio  json, va a responder generando codigo js 
+        end 
     end
 
     def destroy

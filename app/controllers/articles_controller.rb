@@ -9,6 +9,10 @@ class ArticlesController < ApplicationController
     
     def show
         @article = Article.find(params[:id])
+        respond_to do |f|
+            f.html
+            f.js
+        end
     end
 
     def new

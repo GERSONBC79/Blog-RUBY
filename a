@@ -1,0 +1,119 @@
+[33mcommit 545c546d9d986f6f95a49c28ec7541f3c0579df3[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: gersonbc79 <gersonbc_33@hotmail.com>
+Date:   Tue Apr 5 14:23:33 2022 -0500
+
+    Se modifico la funcion de identificación de usuario solo para ser solucitada cuando se elimine un coemtario o un articulo
+
+[33mcommit 1a8d1bd751c062e7de8d66307342d8cb60740889[m
+Author: gersonbc79 <gersonbc_33@hotmail.com>
+Date:   Mon Apr 4 20:10:58 2022 -0500
+
+    Se modifico el manejador de la bd de mysqlite3 a mysql con mariadb
+
+[33mcommit bce7c5e4368166ddbb7a4cdf576d6098d33dafe1[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: gersonbc79 <gersonbc_33@hotmail.com>
+Date:   Wed Mar 30 22:31:59 2022 -0600
+
+    Redaccion del archivo ReadMe
+
+[33mcommit 280b879196769913a1b9776f5a02c24aa2d4aacb[m
+Author: gersonbc79 <gersonbc_33@hotmail.com>
+Date:   Wed Mar 30 21:18:49 2022 -0600
+
+    Funcion para autenticar un usaruio para realizar ciertas acciones
+
+[33mcommit f7ff05fe5da9e9131b34a6f7512459340a5abfd0[m
+Author: gersonbc79 <gersonbc_33@hotmail.com>
+Date:   Wed Mar 30 21:09:29 2022 -0600
+
+    Funcion para eliminar comentarios
+
+[33mcommit b9d8ce240c5d7ee6419515438f500004b246c9cb[m
+Author: gersonbc79 <gersonbc_33@hotmail.com>
+Date:   Wed Mar 30 21:04:25 2022 -0600
+
+    Funcion para crear un nuevo comentario y mostrarlo dentro de su correspondiente articulo
+
+[33mcommit 9332343ccdad60fe36a326b9b0ce00c905672ea3[m
+Author: gersonbc79 <gersonbc_33@hotmail.com>
+Date:   Wed Mar 30 21:02:13 2022 -0600
+
+    Generando controlador de comments
+
+[33mcommit 61bf1410aa13283533103675dc3bcdec16b7759f[m
+Author: gersonbc79 <gersonbc_33@hotmail.com>
+Date:   Wed Mar 30 21:00:03 2022 -0600
+
+    Asociar modelo coment a modelo articulo, y agregar la ruta de coments
+
+[33mcommit 754fd971f7a412e2cda3fcdcdcb68d75492f7256[m
+Author: gersonbc79 <gersonbc_33@hotmail.com>
+Date:   Wed Mar 30 20:55:40 2022 -0600
+
+    Creacion de segundo modelo llamado comentarios que tiene una referencia al modelo Articles
+
+[33mcommit 177981be266fae89c92308313eedcf7fc325ef6b[m
+Author: gersonbc79 <gersonbc_33@hotmail.com>
+Date:   Wed Mar 30 20:53:43 2022 -0600
+
+    Creacion de funcion enargada eliminar un articulo creado
+
+[33mcommit 7e2aaccee7fa6ad46a2815c0a0ec294cdeca6654[m
+Author: gersonbc79 <gersonbc_33@hotmail.com>
+Date:   Wed Mar 30 16:44:24 2022 -0600
+
+    Creacion de funcion enargada de editar un articulo
+
+[33mcommit bccaad94d2999f275f49b6a0ea61d9a14d513ece[m
+Author: gersonbc79 <gersonbc_33@hotmail.com>
+Date:   Wed Mar 30 16:35:40 2022 -0600
+
+    Creacion de funcion enargada de la validacion del formulario
+
+[33mcommit cc38abc63696b2ffe36d8ff84eaeabe74e06fa43[m
+Author: gersonbc79 <gersonbc_33@hotmail.com>
+Date:   Wed Mar 30 16:29:49 2022 -0600
+
+    Creacion de botones para crear nuevo articulo y regresar
+
+[33mcommit 80b443bfba0de4c1ba011c59199b7ef06c9ef061[m
+Author: gersonbc79 <gersonbc_33@hotmail.com>
+Date:   Wed Mar 30 16:24:17 2022 -0600
+
+    Creacion del funcion encargda de mostrar al usurio la lista de los articulos creados y guardados
+
+[33mcommit 2c530e52019bbd3733fb5f474dd87a7da2021c24[m
+Author: gersonbc79 <gersonbc_33@hotmail.com>
+Date:   Wed Mar 30 16:19:14 2022 -0600
+
+    Creacion del funcion encargda de mostrar al usurio los datos guardados del articulo
+
+[33mcommit 153e99104f5a68861bbe4e0b888daffa8cc4bc4d[m
+Author: gersonbc79 <gersonbc_33@hotmail.com>
+Date:   Wed Mar 30 16:16:23 2022 -0600
+
+    Creacion del funcion encargda de almacenar los datos en la bd
+
+[33mcommit e1cdb69a072357756f0d1d109b20ed486d5ddd7a[m
+Author: gersonbc79 <gersonbc_33@hotmail.com>
+Date:   Wed Mar 30 16:07:36 2022 -0600
+
+    Creacion del modelo Articles
+
+[33mcommit 8625c996a3c0b5c2e7e2583921edbb2d030c14bd[m
+Author: gersonbc79 <gersonbc_33@hotmail.com>
+Date:   Wed Mar 30 16:03:40 2022 -0600
+
+    Creacion del controlador de los articulos, creacion de funcion para crear un nuevo articulo
+
+[33mcommit 9fbae55f6971b0942c89f45306d658ee7648a443[m
+Author: gersonbc79 <gersonbc_33@hotmail.com>
+Date:   Wed Mar 30 15:55:54 2022 -0600
+
+    Primer acercamiento a servidor con una pagina web muy básica
+
+[33mcommit b9a334be18126faebce5e0c5b3b15d4033aac8dc[m
+Author: gersonbc79 <gersonbc_33@hotmail.com>
+Date:   Wed Mar 30 15:44:06 2022 -0600
+
+    Creación del blog
