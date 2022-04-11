@@ -1,7 +1,11 @@
 class ArticlesController < ApplicationController
     
-    http_basic_authenticate_with name: "dhh", password: "secret", only: :destroy
-    
+   # http_basic_authenticate_with name: "dhh", password: "secret", only: :destroy
+    def authenticate 
+        authenticate_or_request_with_http_basic do |username, password|
+            username ==  Rails.application.secrets.usuario_admin && password == Rails.application.secrets.admin_password
+        end
+    end     
 
     def index
         @articles = Article.all
@@ -16,14 +20,17 @@ class ArticlesController < ApplicationController
     end
 
     def new
+        #
+        
         @article = Article.new
     end
 
     def edit
         @article = Article.find(params[:id])
-      end
+    end
 
     def create
+       
         @article = Article.new(article_params)
  
         if @article.save
@@ -44,6 +51,10 @@ class ArticlesController < ApplicationController
     end
 
     def destroy
+       
+        authenticate
+        return 
+        
         @article = Article.find(params[:id])
         @article.destroy
        
