@@ -1,19 +1,21 @@
 
   <div class="modal-header">
-    <p>
-        <strong>Title:</strong>
-        <%= @article.title %>
+      <p>
+        <h2><strong>Title:</strong>
+        <%= @article.title %> </h2>
       </p>
+      
   </div>
-
-  <div class="modal-body">
-    
-    <p>
+  <h3>
       <strong>Text:</strong>
       <%= @article.text %>
-    </p>
+    </h3>
 
-    <h2>Comentarios</h2>
+  <h4>Comentarios</h4>
+  <div id="modalbody" class="modal-body" >
+    
+    
+    
     <%= render @article.comments %>
   
     <h2>Añadir comentario:</h2>
@@ -22,7 +24,7 @@
   </div> 
 
   <div class="modal-footer">
-    <%= link_to 'Editar', edit_article_path(@article) %> |
-    <%= link_to 'Regresar', articles_path %>
+    <%= link_to 'Editar', edit_article_path(@article), :class => 'btn btn-secondary' %> |
+    <%= link_to 'Regresar', articles_path, :class => 'btn btn-danger ' %>
   </div>
 </div>

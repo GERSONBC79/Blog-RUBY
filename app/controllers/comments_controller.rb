@@ -15,15 +15,17 @@ class CommentsController < ApplicationController
     def create
         @article = Article.find(params[:article_id])
         @comment = @article.comments.create(comment_params)
-        if @comment.save
-            redirect_to article_path(@article)
-        else
-            render 'articles/show'
-        end 
         respond_to do |f|
-            f.html #indica que formato de accion va a responder
-            f.js  #cuando se responda una peticio  json, va a responder generando codigo js 
-        end 
+            if @comment.save
+                #article_path(@article) {redirect_to @comment.article}
+                f.html { redirect_to :index}
+                f.js 
+            else
+                #render 'articles/show'
+                f.html { render acttion: "new"}
+                f.js 
+            end 
+        end
     end
 
     def destroy

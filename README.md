@@ -7,17 +7,18 @@ Things you may want to cover:
 
 * Ruby version -> 5.1.6.2
 
-* System dependencies ->NINGUNA
+* System dependencies ->
 
-* Configuration
+* sudo gem install mysql2
+  sudo apt-get install mariadb-server 
+  sudo apt-get install libmariadbd-dev- dependecias para poder usar mariadb como manejador de base de datos
 
-* Database creation 
+* sudo apt-get install git
+git clone https://github.com/twbs/bootstrap.git -dependecias para instalar bootstrap directamente del directorio oficial usando git
 
-* Database initialization
+* sudo apt-get install imagemagick - Dependencia para la funcion de subida de imagenes a los comentarios
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
+gem install bootstrap-modal-rails
 
 * Deployment instructions
 
